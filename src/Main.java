@@ -32,21 +32,23 @@ public class Main {
         //Task#8
         int salary = 29000;
         int total = 0;
-        for (int i = 0; i <= 12; i++){
+        for (int i = 0; i < 12; i++){
             total = total + salary;
-            System.out.println(" Месяц" + i + "сумма накоплений равна" + total );}
+            System.out.println(" Месяц " + i + " сумма накоплений равна" + total );}
 
         //Task#9
         int salary1 = 29000;
         int total1 = 0;
+        double percentage = 0.01;
         for(int i = 0; i < 12; i++){
-            total1 = total1 + total1/100;
             total1 = total1 + salary1;
+            total1 = (int) (total1 * (1 + percentage));
             System.out.println(" Месяц " + i + " сумма накоплений равна " + total1);}
             System.out.println(total1);
 
         //Task#10
         int t = 0;
+
         for (int i = 0; i <= 10; i = i + 1){
             t = i * 2;
         System.out.println(" 2 * " + i + " = " + t);}
